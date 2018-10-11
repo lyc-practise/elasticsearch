@@ -1,4 +1,4 @@
-package cn.spring.cloud.base;
+package cn.business.server.search.es;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

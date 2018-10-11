@@ -1,0 +1,5 @@
+
+elastic:
+  server: 192.168.150.129
+  port: 9200
+  channel: http

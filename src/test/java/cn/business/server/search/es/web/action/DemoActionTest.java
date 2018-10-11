@@ -1,11 +1,9 @@
-package cn.spring.cloud.base.web.action;
+package cn.business.server.search.es.web.action;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-
-import static org.junit.Assert.*;
 
 public class DemoActionTest {
 

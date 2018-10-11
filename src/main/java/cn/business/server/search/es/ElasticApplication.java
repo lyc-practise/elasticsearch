@@ -1,12 +1,12 @@
-package cn.spring.cloud.base;
+package cn.business.server.search.es;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ApplicationBootstrap {
+public class ElasticApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ApplicationBootstrap.class, args);
+		SpringApplication.run(ElasticApplication.class, args);
 	}
 }

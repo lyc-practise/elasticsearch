@@ -1,4 +1,4 @@
-package cn.spring.cloud.base.web.action;
+package cn.business.server.search.es.web.action;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
