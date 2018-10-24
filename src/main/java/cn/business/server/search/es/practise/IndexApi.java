@@ -2,6 +2,8 @@ package cn.business.server.search.es.practise;
 
 import cn.business.server.search.es.model.Posts;
 
+import java.util.Date;
+
 public class IndexApi {
 
     public static void createPosts(){
@@ -9,9 +11,9 @@ public class IndexApi {
         Posts posts = new Posts(){
             {
                 setUser("kimchty");
-                setPostDate(JSON.toJSONString()).;
+                setPostDate(new Date());
             }
-        }
+        };
     }
 
 
