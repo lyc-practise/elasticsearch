@@ -1,40 +1,22 @@
 package cn.business.server.search.es.practise;
 
 
-import cn.business.server.search.es.utils.FutureTaskUtils;
-
-import java.util.concurrent.*;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 public class ExecutorTest {
 
-    public static void main(String[] args) throws InterruptedException, TimeoutException, ExecutionException {
-
-        ExecutorService executorService = Executors.newCachedThreadPool();
+    public static void main(String[] args) {
 
 
-        RunnableFuture<Integer> runFuture = FutureTaskUtils.newTaskFor(new CallTest());
+//        System.out.println("10000000000000000000000000000000".length());
 
-        executorService.execute(runFuture);
-
-
-        TimeUnit.SECONDS.sleep(1);
-
-        System.out.println("睡了1s");
-        try{
-            System.out.println("取到的结果:" + runFuture.get(1, TimeUnit.SECONDS));
-        }catch (Exception e){
-            System.out.println("取结果超时异常");
-        }
-
-        System.out.println("最终取到的结果：" + runFuture.get());
-
-
-        Thread.currentThread().
+        ExecutorService service = Executors.newCachedThreadPool();
+        service.execute(new RunTest());
 
     }
-
-
-
 
     static class RunTest implements Runnable{
 
